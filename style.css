@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@300;400&display=swap');
 
 /* Reset Styles */
 * {
@@ -9,16 +9,16 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #e5e5e5;
-    background-color: #0a0f1f;
+    font-family: 'Open Sans', sans-serif;
+    color: #f3f2ed;
+    background-color: #0d1b2a;
     line-height: 1.6;
 }
 
 /* Navbar */
 header {
-    background-color: #0d1536;
-    color: #e5e5e5;
+    background-color: #1b263b;
+    color: #f3f2ed;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -35,9 +35,9 @@ header nav {
 }
 
 header nav .logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 header nav ul {
@@ -50,40 +50,42 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #e5e5e5;
+    color: #f3f2ed;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #62a1ff;
+    color: #f6d7b0;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: #0a0f1f;
-    color: #e5e5e5;
+    background: #0d1b2a;
+    color: #f3f2ed;
     animation: fadeIn 1s ease-out;
 }
 
 .hero h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
+    color: #f6d7b0;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: #d9d6cf;
 }
 
 .hero .cta {
     padding: 0.75rem 1.5rem;
-    background-color: #62a1ff;
-    color: #0a0f1f;
+    background-color: #f6d7b0;
+    color: #1b263b;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -115,12 +117,16 @@ header nav ul li a:hover {
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    background-color: #1b263b;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
 }
 
 .section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    color: #62a1ff;
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    color: #f6d7b0;
     margin-bottom: 1rem;
     position: relative;
     animation: slideIn 0.8s ease-out;
@@ -147,7 +153,7 @@ header nav ul li a:hover {
 }
 
 .project {
-    background: #0d1536;
+    background: #f6d7b0;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -160,6 +166,15 @@ header nav ul li a:hover {
     transform: translateY(-10px);
 }
 
+.project h3 {
+    font-family: 'Lora', serif;
+    color: #1b263b;
+}
+
+.project p {
+    color: #3a506b;
+}
+
 /* Skills Section */
 .skills-list {
     display: flex;
@@ -169,30 +184,30 @@ header nav ul li a:hover {
 }
 
 .skills-list li {
-    background: #62a1ff;
-    color: #0a0f1f;
+    background: #f3f2ed;
+    color: #0d1b2a;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: 500;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
     transition: background-color 0.3s ease;
 }
 
 .skills-list li:hover {
-    background-color: #0d1536;
-    color: #e5e5e5;
+    background-color: #f6d7b0;
+    color: #0d1b2a;
 }
 
 /* Contact Section */
 section#contact button {
-    background-color: #62a1ff;
-    color: #0a0f1f;
+    background-color: #f6d7b0;
+    color: #1b263b;
     padding: 0.75rem 1.5rem;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
     transition: transform 0.3s ease;
 }
 
@@ -204,12 +219,8 @@ section#contact button:hover {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: #0d1536;
-    color: #e5e5e5;
+    background: #1b263b;
+    color: #f3f2ed;
     font-size: 0.9rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.logo {
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
 }
