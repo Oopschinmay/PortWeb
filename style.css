@@ -1,0 +1,215 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    background-color: #0a0f1f;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #0d1536;
+    color: #e5e5e5;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #62a1ff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #0a0f1f;
+    color: #e5e5e5;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .cta {
+    padding: 0.75rem 1.5rem;
+    background-color: #62a1ff;
+    color: #0a0f1f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.hero .cta:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Styles */
+.section {
+    padding: 3rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #62a1ff;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Project Section */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project {
+    background: #0d1536;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: #62a1ff;
+    color: #0a0f1f;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #0d1536;
+    color: #e5e5e5;
+}
+
+/* Contact Section */
+section#contact button {
+    background-color: #62a1ff;
+    color: #0a0f1f;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+section#contact button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0d1536;
+    color: #e5e5e5;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: cursive;
+}
